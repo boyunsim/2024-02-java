@@ -15,6 +15,7 @@ public class StudyDataType {
             #문자형: char(2)
 
             자동형변환 방향: byte > short > int > long > float > double
+            명시적 형 변환: 변환하고 싶은 값 앞에 (형 이름){ex) (int), (short)...등 }을 붙여서 강제로 변환하는 방법
         */
 
         byte var1 = 127;
