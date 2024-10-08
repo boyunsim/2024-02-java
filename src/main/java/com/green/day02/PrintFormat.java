@@ -24,7 +24,11 @@ public class PrintFormat {
 
         int won = 230000000;
         System.out.printf("won: %,d원\n", won); //Nice!!!!!!!
+        System.out.printf("won: %12d원\n", won);
         System.out.printf("won: %-12d원\n", won);
         System.out.printf("won: %012d원\n", won);
+
+        String result = String.format("won: %,d원", won);
+        System.out.println(result);
     }
 }
