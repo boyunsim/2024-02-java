@@ -1,7 +1,10 @@
 package com.green.day03.ch05;
 
+
+
 public class DoWhileBasic {
     public static void main(String[] args) {
+
         /*
             while문은 ()안의 결과가 true인지 체크 먼저 한다.
             체크 후 true면 반복 시작

@@ -3,13 +3,15 @@ package com.green.day03.ch05;
 public class Star {
     public static void main(String[] args) {
         int star = 60;
-        for(int i =1; i<=star; i++) {
+        for(int i =star; i>=0; i--) {
             for(int j = 1; j<=star; j++){
-                if( i <= (star/3) && j >= (star/3) && j <= ((star/3)*2)) {
+                int ran = star / 3;
+                if(i >= (2*star)/3 && j <= (2*star)/3 && j >= star) {
 
                 }
             }
             System.out.println();
         }
+
     }
 }
