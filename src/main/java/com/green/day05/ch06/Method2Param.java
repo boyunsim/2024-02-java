@@ -14,12 +14,15 @@ public class Method2Param {
         저의 키는 175.9cm 입니다.
          */
         byEveryone();
+        byEveryone();
         //다음에 뵙겠습니다.
     }
+
     static void hiEveryone(int a, double h) {
         System.out.printf("제 나이는 %5d세 입니다.\n저의 키는 %5.1fcm 입니다.\n", a, h);
     }
-    static void byEveryone() {
+
+    static void byEveryone() { //메소드뒤 () '소괄호' >> 공장입구이다!!!
         System.out.println("다음에 뵙겠습니다.\n");
     }
 }

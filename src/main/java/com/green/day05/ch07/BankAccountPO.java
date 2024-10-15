@@ -1,6 +1,9 @@
 package com.green.day05.ch07;
 
 public class BankAccountPO {
+    // int balance = 0; static메소드는 static 멤버필드만 사용할 수 있다.
+    // 메모리에 올라가 있지 않기 때문에
+
     static int balance = 0; //static 전역변수
     // 보통 static 이 아닌 private로 '은닉화' 한다.
     // 전역변수는 메소드를 통해서만 변경 확인 가능하게 한다.
@@ -15,7 +18,7 @@ public class BankAccountPO {
 
     static int checkMyBalance() {
         //쓰레기 코드 이렇게 짜면 안됨 메소드는 한가지 일만 해야함 근데 얘는 2가지 일을 하는중
-        System.out.println("잔액 : " + balance);
+        System.out.println("보윤이 지갑 잔액 : " + balance);
         return balance;
     }
 }

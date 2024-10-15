@@ -10,7 +10,8 @@ public class InfRecul {
         if(cnt == 1) {
             return;
         }
-        //showHi(cnt --);
+
+        //showHi(cnt --);    읽기 먼저 하기때문에 showHi(3)이 계속 열린다.
         //showHi(--cnt);
         showHi(cnt - 1);
     }

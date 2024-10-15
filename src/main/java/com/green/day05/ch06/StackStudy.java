@@ -2,6 +2,14 @@ package com.green.day05.ch06;
 
 public class StackStudy {
     public static void main(String[] args) {
+        /*
+            Stack: FILO(First In Last Out)
+                   가장 먼저 들어온 것이 가장 늦게 나간다.
+             |   |
+             |   |
+             |___|
+
+         */
         System.out.println("-- main [start] --");
         methodA();
         System.out.println("-- main [end] --");
@@ -13,7 +21,6 @@ public class StackStudy {
     }
     static void methodB() {
         System.out.println("----- methodB [start] -----");
-        methodB();
         System.out.println("----- methodB [end] -----");
     }
 }
