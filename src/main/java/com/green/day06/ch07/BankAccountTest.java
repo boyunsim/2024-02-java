@@ -4,10 +4,13 @@ public class BankAccountTest {
     public static void main(String[] args) {
 
         // BankAccount.deposit(4000);
+        // 대문자로 시작하는 타입은 참조변수일 가능성이 높다.
         BankAccount ba = new BankAccount(); // 객체 생성. //주소값이 저장.
         // ba는 BankAccount 객체 주소값만 담을 수 있는 참조변수(reference변수)이다.
         // (메모리에 올리기위함)new 키워드로 문서한테 진짜가 되라는 객체화과정 >>이 과정에서 객체의 주소값을 리턴해 저장 한다.
         // 다만 BankAccount(객체)의 주소값만 저장이 가능하다.
+
+        //ba = null; 주소를 저장하고 사용하기전에 null처리 해버리면 주소로 접근할 방법이 없어진다.
         ba.deposit(1000);
         ba.checkMyBalance();
         ba.deposit(2000);

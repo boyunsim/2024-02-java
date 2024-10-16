@@ -13,7 +13,7 @@ public class UnsafeCircle {
         System.out.println("원의 넓이(3): " + c.getArea());
 
         c.rad = -3.3; //잘못된 값이 입력되는 것을 막을 방법이 없기에 은닉화를 한다.
-        System.out.println("원의 넒이(4)" + c.getArea());
+        System.out.println("원의 넒이(4): " + c.getArea());
     }
 
 }

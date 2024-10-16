@@ -10,7 +10,7 @@ public class AccessLevelTest {
 
         String str = "String은 워낙 자주 사용하기 때문에 자동으로 import가 된다.";
 
-        //Circle2 c = new Circle2();
+        //Circle2 c = new Circle2(); >> Circle2 는 default 이므로 패키지가 다르면 사용할 수 없다
     }
 }
 /*

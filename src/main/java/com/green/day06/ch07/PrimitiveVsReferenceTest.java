@@ -1,13 +1,15 @@
 package com.green.day06.ch07;
 
 /*
-    일반 변수(Primitive type)
+    일반 변수(Primitive type) >> c#에는 없는데 왜 자바에는 있나? 처리속도가 훨씬 빠르기 때문에!
     참조 변수(Reference type)
     차이점을 설명하는 예제
  */
 public class PrimitiveVsReferenceTest {
     public static void main(String[] args) {
         int num = 10;
+        Integer num2 = num;
+        //참조변수로 주소접근하여 쓸 수있는 목록은 대부분 method이다. 멤버필드는 private(은닉화)이기 때문에 사용불가(상수 제외)
         changeNum(num);
         System.out.println("num: " + num);
 
@@ -16,6 +18,7 @@ public class PrimitiveVsReferenceTest {
 
         changeNum(nb);
         System.out.println("nb.num: " + nb.num);
+        //결론적으로 method를 통해서 변수를 변경하는것은 불가능하다.(일반,참조 둘다)
     }
 
     /*

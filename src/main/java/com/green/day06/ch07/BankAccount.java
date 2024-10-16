@@ -24,3 +24,7 @@ public class BankAccount { //Heap 메모리에 올라간다
         System.out.printf("all balance: %d\n", allbalance);
     }
 }
+
+
+
+

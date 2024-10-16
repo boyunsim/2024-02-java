@@ -16,7 +16,8 @@ public class GetterSetterExam {
         s2.setAge(26);
         s2.setHeight(169.3f);
 
-        System.out.printf("저의 이름은 %s이고 나이는 %d, 키는 %.1f 입니다.",s2.getName(),s2.getAge(),s2.getHeight());
+        System.out.printf("저의 이름은 %s이고 나이는 %d, 키는 %.1f 입니다."
+                           ,s2.getName(),s2.getAge(),s2.getHeight());
 
     }
 }
