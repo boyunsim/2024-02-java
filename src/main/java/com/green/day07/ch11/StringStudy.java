@@ -46,5 +46,11 @@ public class StringStudy {
         String str9 = n + "";
         String str10 = String.valueOf(n);
         System.out.println(str10 + 10);
+
+        System.out.println("-----------------------------");
+
+        String str11 = "abcdefgcd";
+        String str11Result = str11.replace("cd", "CD");
+        System.out.println("str11Result: " + str11Result);
     }
 }

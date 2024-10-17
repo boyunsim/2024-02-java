@@ -35,7 +35,7 @@ public class StaticStudy {
         StaticNumBox.n1 = 50;
         StaticNumBox.n2 = 60;
         StaticNumBox.sum(); // 110
-        StaticNumBox.sum(150,160);
+        StaticNumBox.sum(150,160); //파라미터 값만으로 작업이 가능한 메소드는 static붙이면 좋다!!!!!!!!
         //클래스 멤버필드, 메소드는 위 처럼 사용할 수 있다.
         //매개변수만 이용하여 해결하는 메소드는 static 메소드로 만들면 좋다. (즉 멤버필드 사용하지 않는 경우)
 

@@ -22,7 +22,7 @@ public class Car {
                                   //>> 생성자에서 생성자를 호출하면 일을 몰아주기 때문에 관리를 한곳에서 하면된다.
     }
     public Car(String gearType, int door){
-        this("white", gearType, door);
+        this("white", gearType, door); //여기서 "white" >> 하드코딩이다
     }
 
     public Car(String color, String gearType, int door) {
