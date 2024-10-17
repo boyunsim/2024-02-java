@@ -8,6 +8,9 @@ public class ShuffleArray {
         for (int i = 0; i<arr.length; i++) {
             arr[i]=i+1;
         }
+
+        System.out.println(Arrays.binarySearch(arr,5));
+
         System.out.println(Arrays.toString(arr));
         for (int i = 0; i<arr.length; i++) {
             int temp;
@@ -16,11 +19,14 @@ public class ShuffleArray {
 //            temp = arr[a];
 //            arr[a] = arr[b];
 //            arr[b] = temp;
+            if (arr[i]-1 != a){
             temp = arr[i];
             arr[i] = arr[a];
             arr[a] = temp;
+            }
         }
         System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.binarySearch(arr,4));
     }
 
 }
