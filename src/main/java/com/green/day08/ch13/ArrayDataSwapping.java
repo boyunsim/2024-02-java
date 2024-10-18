@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrayDataSwapping {
     public static void main(String[] args) {
-        int arr[] = {10,20,30};
+        int arr[] = { 10, 20, 30 };
 
         int temp;
 
@@ -12,7 +12,7 @@ public class ArrayDataSwapping {
         arr[0] = arr[2];
         arr[2] = temp;
         //arr[0]방의 값과 arr[2]의 값을 swapping 해주세요.
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr)); //스태틱 클래스 메소드
         //[30 20 10]
     }
 }

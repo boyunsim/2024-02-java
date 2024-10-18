@@ -1,7 +1,10 @@
 package com.green.day08.ch11;
 
+import com.green.day01.ch01.SystemOutPrintLn;
+
 public class BuildString {
     public static void main(String[] args) {
+
         //문자열 "123"이 저장된 인스턴스 생성
         StringBuilder sb = new StringBuilder("123");
         sb.append(45678);
@@ -12,7 +15,6 @@ public class BuildString {
 
         //미니 미션
         //모든 문자열을 지우는 방법(치사하게 x)
-
         System.out.println(sb.length());
         sb.delete(0, sb.length());
         System.out.println(sb.length());
@@ -29,6 +31,11 @@ public class BuildString {
         System.out.println("sb: " + sb);
 
         StringBuilder sb2 = sb.reverse().replace(0, 2, "KK");
+        System.out.println("sb2: " + sb2);
+
+        StringBuilder sb3 = new StringBuilder("123");
+        sb3.append(45678).delete(0, 2).replace(0, 3, "KK");
+        System.out.println("sb3: " + sb3);
         // 체이닝 기법, return this;가 핵심이다.
 
         String sub = sb.substring(2, 4);

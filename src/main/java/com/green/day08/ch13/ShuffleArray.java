@@ -9,7 +9,8 @@ public class ShuffleArray {
             arr[i]=i+1;
         }
 
-        System.out.println(Arrays.binarySearch(arr,5));
+        System.out.println(Arrays.binarySearch(arr,20));
+        System.out.println(Arrays.binarySearch(arr,1));
 
         System.out.println(Arrays.toString(arr));
         for (int i = 0; i<arr.length; i++) {
@@ -24,9 +25,10 @@ public class ShuffleArray {
             arr[i] = arr[a];
             arr[a] = temp;
             }
+            System.out.println(Arrays.toString(arr));
         }
-        System.out.println(Arrays.toString(arr));
-        System.out.println(Arrays.binarySearch(arr,4));
+//        System.out.println(Arrays.binarySearch(arr,20));
+//        System.out.println(Arrays.binarySearch(arr,1)); // >> 원인찾기 //정렬된 상태에서만 사용가능
     }
 
 }

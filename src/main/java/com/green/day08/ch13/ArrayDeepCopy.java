@@ -4,7 +4,7 @@ public class ArrayDeepCopy {
     public static void main(String[] args) {
         int[] arr = {10, 15, 23, 1, 8, 10, 12};
         int[] copyArr = new int[arr.length];
-        for (int i = 0; i<copyArr.length; i++) {
+        for (int i = 0; i < copyArr.length; i++) {
             copyArr[i] = arr[i];
         }
 
