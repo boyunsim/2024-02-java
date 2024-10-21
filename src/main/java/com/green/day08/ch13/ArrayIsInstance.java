@@ -15,9 +15,9 @@ public class ArrayIsInstance {
         Integer i2 = Integer.valueOf(10);
         i2 = i2 + 2;
 
-        Integer i3 = new Integer(10);
-        Integer i4 = new Integer(10);
-        System.out.printf("i3 == i4 : %b\n",i3==i4);
+        //Integer i3 = new Integer(10);
+        //Integer i4 = new Integer(10);
+        //System.out.printf("i3 == i4 : %b\n",i3==i4);
 
         Integer i5 = Integer.valueOf(12);
         System.out.printf("i2 == i5 : %b\n",i2==i5); //single tone 처럼 작동

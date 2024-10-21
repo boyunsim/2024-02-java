@@ -1,17 +1,16 @@
 package com.green.day09.ch13;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class BaekMission {
+public class BaekMission1 {
     public static void main(String[] args) {
         int[] input = new int[30];
+        Scanner scan = new Scanner(System.in);
         for(int i = 0; i<28; i++){
             int k;
-            Scanner scan = new Scanner(System.in);
             System.out.print(">> ");
-             k = scan.nextInt();
-             input[k-1] = k;
+            k = scan.nextInt();
+            input[k-1] = k;
         }
         int[] n = new int[2];
         int k = 0;

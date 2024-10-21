@@ -51,6 +51,8 @@ class Product {
         return price;
     }
 
+    //오버라이딩 (Overriding)
+    @Override //애노테이션, 오버라이드 애노테이션을 작성하면 실수방지 기능이 있다.
     public String toString() {
         return String.format("제품명: %12s, 가격: %,10d원", name, price);//원칙적으로는 %,d는 프론트에서 찍어주는것이 좋다 (서버(백엔드)는 일을 많이 안해야한다.)
     }
