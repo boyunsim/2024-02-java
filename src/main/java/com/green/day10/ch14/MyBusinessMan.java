@@ -22,6 +22,7 @@ class Man {
     private String name;
 
     public Man(String name) {
+        super(); // 생략해도 자동으로 추가된다.
         this.name = name;
     }
 
