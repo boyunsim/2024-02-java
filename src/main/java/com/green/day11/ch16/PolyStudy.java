@@ -19,7 +19,6 @@ public class PolyStudy {
         Animal ani = new Animal();
         Dog dog = new Dog();
         BullDog bdog = new BullDog();
-        Bird bird = new Bird();
         ani = bdog;
         ani.crying();
 
@@ -30,6 +29,7 @@ public class PolyStudy {
         Animal ani3 = new BullDog();
         Animal ani4 = new Bird();
         Dog dog1 = new BullDog();
+
 
         //2번 검증
         //BullDog bullDog1 = new Dog(); //불가 - 컴파일 에러 발생
@@ -66,14 +66,31 @@ public class PolyStudy {
         //가능: 타입 동일한 객체이거나 자식 객체
         //불가능: 가능의 반대
 
+
         System.out.println(ani3 instanceof BullDog);
         System.out.println(ani3 instanceof Dog);
         System.out.println(ani4 instanceof BullDog);
         System.out.println(ani4 instanceof Bird);
 
-
+        Cat cat2 = new Cat();
+        Dog dog2 = new Dog();
+        BullDog bullDog = new BullDog();
+        Bird bird = new Bird();
+        System.out.println("---------------");
+        animalCrying(cat2);
+        animalCrying(dog2);
+        animalCrying(bullDog);
+        animalCrying(bird);
+    }
+    static void animalCrying(Animal ani) {
+        ani.crying();
+        if (ani instanceof BullDog) {
+            BullDog bullDog4 = (BullDog)ani;
+            bullDog4.jump();
+        }
     }
 }
+
 
 class Animal {
     void crying() {
@@ -86,6 +103,7 @@ class Cat extends Animal {
     void crying() {
         System.out.println("야옹~ 야옹~");
     }
+
 }
 
 class Dog extends Animal {

@@ -1,6 +1,6 @@
 package com.green.day11.ch14;
 
-public class SuperSubStatic {
+public class SuperSubStatic { //파일명과 클래스명이 같을 때만 public을 붙일수있다.
     public static void main(String[] args) {
         SuperCLS s1 = new SuperCLS();
         SuperCLS s2 = new SuperCLS();
@@ -9,7 +9,7 @@ public class SuperSubStatic {
     }
 }
 
-class SuperCLS {
+class SuperCLS { //클래스 앞에는 public만 올 수 있다 protected나 private은 올 수 없다
     protected static int count;
 
     SuperCLS() {
