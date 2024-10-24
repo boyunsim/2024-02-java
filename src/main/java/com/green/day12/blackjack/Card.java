@@ -19,7 +19,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return String.format("%s(%s)", pattern, denomination);
-//        return pattern + "(" + denomination + ")";
+        return String.format("%s(%s)"
+                , pattern, denomination);
     }
 }

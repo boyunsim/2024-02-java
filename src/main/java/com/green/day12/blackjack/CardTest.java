@@ -1,22 +1,46 @@
 package com.green.day12.blackjack;
 
-import java.util.Arrays;
+import java.util.List;
 
 public class CardTest {
     public static void main(String[] args) {
-        CardDeck cardDeck = new CardDeck();
-        System.out.println(cardDeck.getDenomination(1));
-        System.out.println(cardDeck.getDenomination(2));
-        System.out.println(cardDeck.getDenomination(3));
-        System.out.println(cardDeck.getDenomination(10));
-        System.out.println(cardDeck.getDenomination(11));
-        System.out.println(cardDeck.getDenomination(14));
-        System.out.println(cardDeck.getPattern(1));
-        System.out.println(cardDeck.getPattern(2));
-        System.out.println(cardDeck.getPattern(3));
-        System.out.println(cardDeck.getPattern(4));
-        System.out.println(cardDeck.getPattern(5));
+        CardDeck cd = new CardDeck();
+        cd.checkCard();
+        System.out.println("-------------------------");
+        Card c = cd.draw();
+        System.out.println(c);
+        System.out.println("-------------------------");
+//        Card c2 = cd.draw();
+//        System.out.println(c2);
+        cd.checkCard();
+    }
+}
+class CardTest2 {
+    public static void main(String[] args) {
+        CardDeck cd = new CardDeck();
+        Card c1 = cd.draw();
+        Gamer gamer = new Gamer();
+        gamer.receiveCard(c1); //카드를 저장한다
+        gamer.receiveCard(cd.draw());
+        gamer.receiveCard(cd.draw());
+        gamer.receiveCard(cd.draw());
+        gamer.receiveCard(cd.draw());
+        System.out.println("--------------");
 
+        gamer.showYourCards();
+        List<Card> list = gamer.openCards();
+    }
+}
+
+class CardTest3 {
+    public static void main(String[] args) {
+        CardDeck cd = new CardDeck();
+        Dealer dealer = new Dealer();
+        dealer.receiveCard(cd.draw());
+        dealer.receiveCard(cd.draw());
+        dealer.receiveCard(cd.draw());
+        System.out.println("------------------");
+        dealer.showYourCards();
 
     }
 }
