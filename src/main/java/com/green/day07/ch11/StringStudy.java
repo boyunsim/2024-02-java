@@ -21,7 +21,7 @@ public class StringStudy {
         System.out.println("str.substring(3): "
                            + str6.substring(3)); //파일명에서 확장자 추출할 때 사용
         System.out.println("str6.substring(4, 7): "
-                           + str6.substring(4, 7)); // 4, 5 ,6자리의 문자열을 리턴
+                           + str6.substring(14)); // 4, 5 ,6자리의 문자열을 리턴
 
         String fileNm = "nice_Very.Nice.jpg";
         System.out.println(".의 위치값: " + fileNm.indexOf("."));

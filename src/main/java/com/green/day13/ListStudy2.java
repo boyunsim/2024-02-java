@@ -20,7 +20,7 @@ public class ListStudy2 {
         System.out.println(list.size());
 
         int n1 = list.get(2); //형변환 하지 않아도 된다. list에 제일 처음 들어간 int 정수 값
-
+        System.out.println(n1);
         list.add(1, 60); //1에 추가
         System.out.println(list);
         System.out.println(list.size());
