@@ -2,7 +2,7 @@ package com.green.day14.ch17;
 
 public abstract class AbstractStudy {
     /*
-    //p.380 추상클래스
+    //p.380 추상클래스 //웹개발자는 잘 쓰지 않는다
         class 키워드 앞에 abstract 키워드를 붙이면 추상클래스가 된다.
         추상클래스가 되면 객체화 불가능 >> 부모역할만 한다. (단독으로는 의미가 없다)
         그래서 추상클래스를 상속받는 클래스가 있기 마련이다.
@@ -19,7 +19,7 @@ public abstract class AbstractStudy {
     // 그리고 abstract 키워드를 붙여야 한다.)
     public abstract void sum();
 
-    //추상클래스도 구현부가 있는 메소드
+    //추상클래스도 구현부가 있는 메소드 가질 수 있다.
     public void multiply (int n1, int n2) {
         System.out.println(n1*n2);
     }
@@ -29,7 +29,7 @@ abstract class ImplementsStudy2 extends AbstractStudy {
 
 }
 
-class ImplementsStudy extends AbstractStudy {
+class ImplementsStudy extends AbstractStudy { //extends에서 빨간줄이 나면 abstract 때문이다!(혹은 생성자)
 
     //꼭 부모의 추상 메소드를 구현해야 한다. >> implements 강제성이 있다 == 오버라이딩 강제성이 있다
     @Override

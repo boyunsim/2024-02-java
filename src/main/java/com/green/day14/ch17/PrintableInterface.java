@@ -26,7 +26,7 @@ public class PrintableInterface {
 //interface를 만들면 생략하면 무조건 들어가는 키워드가 있다.
 /*
 interface Printable {
-    public static final int num = 0; //멤버필드 앞에는 public static이 무조건 추가
+    public static final int num = 0; //멤버필드 앞에는 public static final이 무조건 추가
     public abstract void print(String doc); //메소드 앞에는 public abstract가 무조건 추가
 }
 */

@@ -25,7 +25,7 @@ interface ColorPrintable extends Printable {
 //ColorPrintable 타입으로 호출할 수 있는 메소드: printCMYK, print
 //Printable 타입으로 호출할 수 있는 메소드: print
 // >> 바라보는 관점에 따라 호출할 수 있는 메소드가 다르다 (내가 아는 메소드만 호출가능(상속받은 메소드포함))
-class Prn909Drv implements ColorPrintable {
+class Prn909Drv /*extends Object*/ implements ColorPrintable {
 
     @Override
     public void print(String doc) {
