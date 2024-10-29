@@ -36,22 +36,43 @@ class FinallyCase2 {
         //writer.close(); 이 문장이 실행이 되지 않는다.
         //그런데 writer.close(); 이문장이 무조건 실행이 되어야 한다.
 
-        Path path = Paths.get("D:/Simple.txt"); //절대경로 (full 경로)
         BufferedWriter writer = null;
         try {
+            Path path = Paths.get("D:/Simple.txt"); //절대경로 (full 경로)
             writer = Files.newBufferedWriter(path);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        try {
             writer.write("FinallyCase");
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
         try {
             writer.close();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
+    }
+}
+
+class FinallyCase3 {
+    public static void main(String[] args) {
+        BufferedWriter writer = null;
+        try {
+            Path path = Paths.get("D:/Simple.txt"); //절대경로 (full 경로)
+            writer = Files.newBufferedWriter(path);
+            writer.write("FinallyCase");
+            return;
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        } finally { //(실행보장)예외가 발생해도 안해도 ❗❗❗❗❗무조건❗❗❗❗❗ 실행되는 부분
+            System.out.println("실행되려나??");
+            try {
+                if(writer != null) {
+                    writer.close();
+                }
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
+        System.out.println("-- end --");
     }
 }
