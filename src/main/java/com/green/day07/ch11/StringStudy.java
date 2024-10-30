@@ -27,7 +27,7 @@ public class StringStudy {
         System.out.println(".의 위치값: " + fileNm.indexOf("."));
         //왼쪽에서 오른쪽 방향으로 가장 빨리 찾은 index값을 리턴
 
-        System.out.println("마지막 .의 위치값: " + fileNm.lastIndexOf("."));
+        System.out.println("마지막 .의 위치값: " + fileNm.lastIndexOf("!"));
         //오른쪽에서 왼쪽 방향으로 가장 빨리 찾은 index값을 리턴
 
         System.out.println("-----------------------------");
