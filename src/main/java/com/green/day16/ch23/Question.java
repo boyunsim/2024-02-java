@@ -4,12 +4,17 @@ import java.util.Arrays;
 
 public class Question {
     public static void main(String[] args) {
-        String str1 = "aAb1B2cC34oOp";
-        int sum = 0 ;
-        for(int i=0; i<str1.length(); i++){
-            for(int z =1; z<=9; z++) {
-                if(str1.indexOf(z)!=-1) {
+        String str2 = "1a2b3c4d123";
+
+        int sum = 0;
+
+        for (int z = 1; z <= 9; z++) {
+            String str1 = str2;
+            for (int i = 0; i<str2.length(); i++){
+                if (str1.indexOf(z + "") != -1) {
                     sum += z;
+                    str1 = str1.substring(str1.indexOf(z + "") + 1);
+                    System.out.println(z + ":" + str1);
                 }
             }
         }

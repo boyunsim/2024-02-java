@@ -50,7 +50,7 @@ public class StringStudy {
         System.out.println("-----------------------------");
 
         String str11 = "abcdefgcd";
-        String str11Result = str11.replace("cd", "CD");
-        System.out.println("str11Result: " + str11Result);
+        str11 = str11.replace("cd", "CD");
+        System.out.println("str11Result: " + str11);
     }
 }
