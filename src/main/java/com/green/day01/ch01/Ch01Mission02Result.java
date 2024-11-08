@@ -12,7 +12,6 @@ public class Ch01Mission02Result {
         //"2 + 5 = 2" + 5 두번 째 연산이 된다. 타입이 다르다
         //"2 + 5 = 2" + "5"
         //"2 + 5 = 25"
-
         System.out.println("2 + 5 = " + (2 + 5));
         System.out.println("2 + 5 = " + 7);
         //(2 + 5) 연산의 우선순위가 더 높기 때문에 먼저 연산이 된다.
