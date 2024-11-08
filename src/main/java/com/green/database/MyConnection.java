@@ -19,7 +19,6 @@ public class MyConnection {
 class MyConnectionTest {
     public static void main(String[] args) {
         try (Connection conn = MyConnection.getConn()) {
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
