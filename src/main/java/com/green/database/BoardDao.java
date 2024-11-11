@@ -42,12 +42,12 @@ public class BoardDao {
 
             while(rs.next()) {
                 Board board = new Board();
-                list.add(board); //주소로 담는것이기 때문에 순서는 상관없다
                 board.setBoardId(rs.getInt("board_id"));
                 String title = rs.getString("title");
                 board.setTitle(title);
                 board.setWriter(rs.getString("writer"));
                 board.setCreatedAt(rs.getString("created_at"));
+                list.add(board); //주소값을 담는것이기 때문에 순서는 상관없다
             }
         } catch (Exception e) {
             e.printStackTrace();
